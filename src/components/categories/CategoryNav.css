@@ -1,0 +1,17 @@
+.category-nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px;
+  background-color: #060809;
+  border-bottom: 1px solid #161313;
+}
+
+.category-item {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.category-item:hover {
+  color: #2ecc71;
+}

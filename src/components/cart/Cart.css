@@ -1,0 +1,18 @@
+.cart {
+  padding: 30px;
+  background-color: #090606;
+  border-top: 1px solid #151414;
+}
+
+.cart h2 {
+  margin-bottom: 15px;
+}
+
+.cart p {
+  margin: 5px 0;
+}
+
+.cart h3 {
+  margin-top: 15px;
+  color: #2ecc71;
+}
