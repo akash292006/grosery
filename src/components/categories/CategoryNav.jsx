@@ -1,23 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./CategoryNav.css";
 
 function CategoryNav() {
   const categories = [
-    "All Products",
-    "Fruits & Veggies",
-    "Electronics",
-    "Dairy Products",
-    "Snacks & Drinks",
-    "Household Essentials",
-    "Kids"
+    { name: "All Products", path: "/" },
+    { name: "Fruits & Veggies", path: "/fruits-veggies" },
+    { name: "Electronics", path: "/electronics" },
+    { name: "Dairy Products", path: "/dairy-products" },
+    { name: "Snacks & Drinks", path: "/snacks-drinks" },
+    { name: "Household Essentials", path: "/household" },
+    { name: "Kids", path: "/kids" }
   ];
 
   return (
     <nav className="category-nav">
       {categories.map((category, index) => (
-        <span key={index} className="category-item">
-          {category}
-        </span>
+        <Link key={index} to={category.path} className="category-item">
+          {category.name}
+        </Link>
       ))}
     </nav>
   );

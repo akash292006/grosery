@@ -1,5 +1,6 @@
 import React from "react";
 import "./HeroSection.css";
+import cartImage from "./cart.png";
 
 function HeroSection() {
   return (
@@ -22,7 +23,7 @@ function HeroSection() {
       </div>
 
       <div className="hero-image">
-        <img src="/cart.png" alt="Shopping Cart" />
+        <img src={cartImage} alt="Shopping Cart" />
       </div>
     </section>
   );
