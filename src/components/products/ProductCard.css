@@ -20,6 +20,11 @@
 
 .product-card h3 {
   margin-bottom: 10px;
+  color: #333;
+}
+
+.product-card p {
+  color: #333;
 }
 
 .product-card button {

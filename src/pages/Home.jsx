@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import OfferBanner from "../components/banner/OfferBanner";
 import HeroSection from "../components/hero/HeroSection";
 import ProductList from "../components/products/ProductList";
@@ -57,9 +57,7 @@ import tvImage from "../ALLIMAGES/Electronics/tv.png";
 import watchImage from "../ALLIMAGES/Electronics/watch.png";
 import tabletImage from "../ALLIMAGES/Electronics/tablet.png";
 
-function Home() {
-  const [cart, setCart] = useState([]);
-
+function Home({ cart, addToCart }) {
   const products = [
     // Home category
     { id: 1, name: "Apple", price: 100, image: appleHome, category: "Home" },
@@ -114,10 +112,6 @@ function Home() {
     { id: 38, name: "Smart Watch", price: 3500, image: watchImage, category: "Electronics" },
     { id: 39, name: "Tablet", price: 12000, image: tabletImage, category: "Electronics" }
   ];
-
-  const addToCart = (product) => {
-    setCart([...cart, product]);
-  };
 
   return (
     <>
