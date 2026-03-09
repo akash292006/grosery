@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./MyCart.css";
 
 function MyCart({ cart, removeFromCart, updateQuantity }) {
   const total = cart.reduce((sum, item) => sum + item.price * (item.quantity || 1), 0);
